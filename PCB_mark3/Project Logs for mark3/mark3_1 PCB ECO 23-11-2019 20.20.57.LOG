@@ -1,0 +1,160 @@
+Added Component: Designator=P_Anlg(TERM_8P_GREEN)
+Added Component: Designator=P_Dig1(TERM_8P_GREEN)
+Added Component: Designator=P_Dig(TERM_8P_GREEN)
+Added Component: Designator=P_LCD(TERM_4P_GREEN)
+Added Component: Designator=P_SENSOR(TERM_4P_GREEN)
+Added Component: Designator=POWER_IN(TERM_2P_GREEN)
+Added Component: Designator=R1(AXIAL-0.4)
+Added Component: Designator=R2(AXIAL-0.4)
+Added Component: Designator=R3(AXIAL-0.4)
+Added Component: Designator=R4(AXIAL-0.4)
+Added Component: Designator=R5(AXIAL-0.4)
+Added Component: Designator=R6(AXIAL-0.4)
+Added Component: Designator=R7(AXIAL-0.4)
+Added Component: Designator=R8(AXIAL-0.4)
+Added Component: Designator=R9(AXIAL-0.4)
+Added Component: Designator=R10(AXIAL-0.4)
+Added Component: Designator=R11(AXIAL-0.4)
+Added Component: Designator=R12(AXIAL-0.4)
+Added Component: Designator=R13(AXIAL-0.4)
+Added Component: Designator=R14(AXIAL-0.4)
+Added Component: Designator=R15(AXIAL-0.4)
+Added Component: Designator=U1(ARDUINOMEGA)
+Added Component: Designator=VR1(MODUL_LM2596_mini)
+Added Component: Designator=VR2(MODUL_LM2596_mini)
+Added Component: Designator=VR3(MODUL_LM2596_mini)
+Added Pin To Net: NetName=5V_LCD Pin=P_LCD-4
+Added Pin To Net: NetName=5V_LCD Pin=VR1-1
+Added Net: Name=5V_LCD
+Added Pin To Net: NetName=5V_PU Pin=P_Anlg-1
+Added Pin To Net: NetName=5V_PU Pin=R1-2
+Added Pin To Net: NetName=5V_PU Pin=R2-2
+Added Pin To Net: NetName=5V_PU Pin=R3-2
+Added Pin To Net: NetName=5V_PU Pin=R4-2
+Added Pin To Net: NetName=5V_PU Pin=R5-2
+Added Pin To Net: NetName=5V_PU Pin=R6-2
+Added Pin To Net: NetName=5V_PU Pin=R7-2
+Added Pin To Net: NetName=5V_PU Pin=R8-2
+Added Pin To Net: NetName=5V_PU Pin=R9-2
+Added Pin To Net: NetName=5V_PU Pin=R10-2
+Added Pin To Net: NetName=5V_PU Pin=R11-2
+Added Pin To Net: NetName=5V_PU Pin=R12-2
+Added Pin To Net: NetName=5V_PU Pin=R13-2
+Added Pin To Net: NetName=5V_PU Pin=R14-2
+Added Pin To Net: NetName=5V_PU Pin=R15-2
+Added Pin To Net: NetName=5V_PU Pin=VR3-1
+Added Net: Name=5V_PU
+Added Pin To Net: NetName=5V_U1 Pin=P_SENSOR-4
+Added Pin To Net: NetName=5V_U1 Pin=U1-5
+Added Pin To Net: NetName=5V_U1 Pin=U1-6
+Added Pin To Net: NetName=5V_U1 Pin=VR2-1
+Added Net: Name=5V_U1
+Added Pin To Net: NetName=D1 Pin=P_Dig-1
+Added Pin To Net: NetName=D1 Pin=R1-1
+Added Pin To Net: NetName=D1 Pin=U1-59
+Added Net: Name=D1
+Added Pin To Net: NetName=D2 Pin=P_Dig-2
+Added Pin To Net: NetName=D2 Pin=R2-1
+Added Pin To Net: NetName=D2 Pin=U1-61
+Added Net: Name=D2
+Added Pin To Net: NetName=D3 Pin=P_Dig-3
+Added Pin To Net: NetName=D3 Pin=R3-1
+Added Pin To Net: NetName=D3 Pin=U1-63
+Added Net: Name=D3
+Added Pin To Net: NetName=D4 Pin=P_Dig-4
+Added Pin To Net: NetName=D4 Pin=R4-1
+Added Pin To Net: NetName=D4 Pin=U1-65
+Added Net: Name=D4
+Added Pin To Net: NetName=D5 Pin=P_Dig-5
+Added Pin To Net: NetName=D5 Pin=R5-1
+Added Pin To Net: NetName=D5 Pin=U1-67
+Added Net: Name=D5
+Added Pin To Net: NetName=D6 Pin=P_Dig-6
+Added Pin To Net: NetName=D6 Pin=R6-1
+Added Pin To Net: NetName=D6 Pin=U1-69
+Added Net: Name=D6
+Added Pin To Net: NetName=D7 Pin=P_Dig-7
+Added Pin To Net: NetName=D7 Pin=R7-1
+Added Pin To Net: NetName=D7 Pin=U1-71
+Added Net: Name=D7
+Added Pin To Net: NetName=D8 Pin=P_Dig-8
+Added Pin To Net: NetName=D8 Pin=R8-1
+Added Pin To Net: NetName=D8 Pin=U1-73
+Added Net: Name=D8
+Added Pin To Net: NetName=D9 Pin=P_Dig1-1
+Added Pin To Net: NetName=D9 Pin=R9-1
+Added Pin To Net: NetName=D9 Pin=U1-75
+Added Net: Name=D9
+Added Pin To Net: NetName=D10 Pin=P_Dig1-2
+Added Pin To Net: NetName=D10 Pin=R10-1
+Added Pin To Net: NetName=D10 Pin=U1-76
+Added Net: Name=D10
+Added Pin To Net: NetName=D11 Pin=P_Dig1-3
+Added Pin To Net: NetName=D11 Pin=R11-1
+Added Pin To Net: NetName=D11 Pin=U1-72
+Added Net: Name=D11
+Added Pin To Net: NetName=D12 Pin=P_Dig1-4
+Added Pin To Net: NetName=D12 Pin=R12-1
+Added Pin To Net: NetName=D12 Pin=U1-70
+Added Net: Name=D12
+Added Pin To Net: NetName=D13 Pin=P_Dig1-5
+Added Pin To Net: NetName=D13 Pin=R13-1
+Added Pin To Net: NetName=D13 Pin=U1-68
+Added Net: Name=D13
+Added Pin To Net: NetName=D14 Pin=P_Dig1-6
+Added Pin To Net: NetName=D14 Pin=R14-1
+Added Pin To Net: NetName=D14 Pin=U1-66
+Added Net: Name=D14
+Added Pin To Net: NetName=D15 Pin=P_Dig1-7
+Added Pin To Net: NetName=D15 Pin=R15-1
+Added Pin To Net: NetName=D15 Pin=U1-62
+Added Pin To Net: NetName=D15 Pin=U1-64
+Added Net: Name=D15
+Added Pin To Net: NetName=GND Pin=P_Anlg-2
+Added Pin To Net: NetName=GND Pin=P_Dig1-8
+Added Pin To Net: NetName=GND Pin=P_LCD-1
+Added Pin To Net: NetName=GND Pin=P_SENSOR-1
+Added Pin To Net: NetName=GND Pin=POWER_IN-1
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=GND Pin=VR1-2
+Added Pin To Net: NetName=GND Pin=VR2-2
+Added Pin To Net: NetName=GND Pin=VR3-2
+Added Net: Name=GND
+Added Pin To Net: NetName=POT1 Pin=P_Anlg-3
+Added Pin To Net: NetName=POT1 Pin=U1-43
+Added Net: Name=POT1
+Added Pin To Net: NetName=POT2 Pin=P_Anlg-4
+Added Pin To Net: NetName=POT2 Pin=U1-45
+Added Net: Name=POT2
+Added Pin To Net: NetName=POT3 Pin=P_Anlg-5
+Added Pin To Net: NetName=POT3 Pin=U1-47
+Added Net: Name=POT3
+Added Pin To Net: NetName=POT4 Pin=P_Anlg-6
+Added Pin To Net: NetName=POT4 Pin=U1-49
+Added Net: Name=POT4
+Added Pin To Net: NetName=POT5 Pin=P_Anlg-7
+Added Pin To Net: NetName=POT5 Pin=U1-51
+Added Net: Name=POT5
+Added Pin To Net: NetName=POT6 Pin=P_Anlg-8
+Added Pin To Net: NetName=POT6 Pin=U1-53
+Added Net: Name=POT6
+Added Pin To Net: NetName=RX1 Pin=P_SENSOR-2
+Added Pin To Net: NetName=RX1 Pin=U1-30
+Added Net: Name=RX1
+Added Pin To Net: NetName=RX2 Pin=P_LCD-2
+Added Pin To Net: NetName=RX2 Pin=U1-28
+Added Net: Name=RX2
+Added Pin To Net: NetName=TX1 Pin=P_SENSOR-3
+Added Pin To Net: NetName=TX1 Pin=U1-29
+Added Net: Name=TX1
+Added Pin To Net: NetName=TX2 Pin=P_LCD-3
+Added Pin To Net: NetName=TX2 Pin=U1-27
+Added Net: Name=TX2
+Added Pin To Net: NetName=VR1 Pin=POWER_IN-2
+Added Pin To Net: NetName=VR1 Pin=VR1-3
+Added Pin To Net: NetName=VR1 Pin=VR2-3
+Added Pin To Net: NetName=VR1 Pin=VR3-3
+Added Net: Name=VR1
+Added Class: Name=mark3
+Added Room: Name=mark3
