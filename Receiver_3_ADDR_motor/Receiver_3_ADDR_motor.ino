@@ -1,0 +1,109 @@
+#include<SPI.h>
+#include<nRF24L01.h>
+#include<RF24.h>
+
+int pesan[2] = {0, 1};
+RF24 rf24(7, 8); //def 7,8
+
+//byte alamat ="INO1099";
+//byte ino="ino";
+int robo = 300;
+//byte alamat=ino+robo;
+//long int alamat=1000;
+long int alamat = 140130150;
+
+void setup() {
+  pinMode(3, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  delay(100);
+  rf24.begin();
+  rf24.openReadingPipe(0, alamat);
+  rf24.setPALevel(RF24_PA_MIN);
+  rf24.startListening();
+  Serial.begin(9600);
+}
+
+void loop() {
+  while (rf24.available()) {
+    rf24.read(pesan, 2);
+    if (pesan[0] == 0) {
+      analogWrite(3, 0);
+      analogWrite(5, 0);
+      analogWrite(6, 0);
+      analogWrite(9, 0);
+//      Serial.println("NOL");
+    } else if (pesan[0] == 1) {
+      analogWrite(3, 255); //PWM
+      digitalWrite(5, 1); //Logic
+      digitalWrite(6, 1); //Logic
+      analogWrite(9, 255); //PWM
+//      Serial.println("1");
+    }
+    else if (pesan[0] == 2) {
+      analogWrite(3, 255); //PWM
+      digitalWrite(5, 0); //Logic
+      digitalWrite(6, 0); //Logic
+      analogWrite(9, 255); //PWM
+//      Serial.println("2");
+    }
+    else if (pesan[0] == 3) {
+      analogWrite(3, 255); //PWMA
+      digitalWrite(5, 1); //LogicA
+      digitalWrite(6, 0); //LogicB
+      analogWrite(9, 0); //PWMB
+//      Serial.println("3");
+    }
+    else if (pesan[0] == 4) {
+      analogWrite(3, 0); //PWM
+      digitalWrite(5, 0); //Logic
+      digitalWrite(6, 1); //Logic
+      analogWrite(9, 255); //PWM
+//      Serial.println("4");
+    }
+    else if (pesan[0] == 5) {
+//      analogWrite(3, 255);
+//      analogWrite(5, 0);
+//      analogWrite(6, 255);
+//      Serial.println("5");
+    }
+    else if (pesan[0] == 6) {
+      analogWrite(3, 255); //PWM
+      digitalWrite(5, 1); //Logic
+      digitalWrite(6, 1); //Logic
+      analogWrite(9, 150); //PWM
+//      Serial.println("6");
+    }
+    else if (pesan[0] == 7) {
+      analogWrite(3, 150); //PWM
+      digitalWrite(5, 1); //Logic
+      digitalWrite(6, 1); //Logic
+      analogWrite(9, 255); //PWM
+//      Serial.println("7");
+    }
+    else if (pesan[0] == 8) {
+      analogWrite(3, 150); //PWM
+      digitalWrite(5, 0); //Logic
+      digitalWrite(6, 0); //Logic
+      analogWrite(9, 255); //PWM
+//      Serial.println("8");
+    }
+    else if (pesan[0] == 9) {
+      analogWrite(3, 255); //PWM
+      digitalWrite(5, 0); //Logic
+      digitalWrite(6, 0); //Logic
+      analogWrite(9, 150); //PWM
+//      Serial.println("9");
+    }
+
+    delay(10);
+    Serial.print("Masuk RF");
+    Serial.print(pesan[0]);
+    Serial.print(" ");
+    Serial.print(pesan[1]);
+    Serial.print(" ");
+    Serial.println(alamat);
+
+  }
+  //Serial.println("ga masuk");
+}
